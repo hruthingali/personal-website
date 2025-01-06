@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Website</title>
+  <title>Hruthin G D - Personal Website</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Welcome to My Website</h1>
+    <h1>Hi, I'm <span class="highlight">Hruthin G D</span></h1>
+    <p>DevOps Engineer at UST Global</p>
     <nav>
       <a href="#about">About Me</a>
       <a href="#projects">Projects</a>
@@ -16,38 +18,53 @@
     </nav>
   </header>
 
-  <section id="about">
+  <section id="about" class="section">
     <h2>About Me</h2>
-    <p>Hello! I'm Hruthin G D, a passionate Devops Engineer working at UST Global.</p>
+    <p>Hello! I'm Hruthin G D, a passionate DevOps Engineer working at UST Global.</p>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="section">
     <h2>Projects</h2>
-    <ul>
-      <li><a href="#"> 1. Automated CI/CD Pipeline Setup
-        Description: Build an end-to-end CI/CD pipeline for a sample application using tools like Jenkins, GitHub Actions, or GitLab CI/CD.
-        Key Features:
-        Automate testing, building, and deployment.
-        Integrate with Docker for containerization.
-        Use Kubernetes for deployment to a production-like environment.
-        Tech Stack: Jenkins/GitHub Actions, Docker, Kubernetes, Helm, Terraform, AWS/GCP/Azure.</a></li>
-      <li><a href="#"> 2. nfrastructure as Code (IaC) Deployment
-        Description: Use Terraform or AWS CloudFormation to provision and manage cloud infrastructure automatically.
-        Key Features:
-        Define infrastructure components (servers, networks, storage) as code.
-        Implement a version-controlled repository for IaC.
-        Automate the setup of monitoring tools like Prometheus or Grafana.
-        Tech Stack: Terraform, Ansible, AWS/Azure/GCP, Prometheus, Grafana.</a></li>
-    </ul>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Automated CI/CD Pipeline Setup</h3>
+        <p>
+          Build an end-to-end CI/CD pipeline for a sample application using tools like Jenkins, GitHub Actions, or GitLab CI/CD.
+        </p>
+        <ul>
+          <li>Automate testing, building, and deployment.</li>
+          <li>Integrate with Docker for containerization.</li>
+          <li>Deploy to a production-like environment using Kubernetes.</li>
+        </ul>
+        <p><strong>Tech Stack:</strong> Jenkins, Docker, Kubernetes, Helm, Terraform, AWS/GCP/Azure</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Infrastructure as Code (IaC) Deployment</h3>
+        <p>
+          Use Terraform or AWS CloudFormation to provision and manage cloud infrastructure automatically.
+        </p>
+        <ul>
+          <li>Define infrastructure components as code.</li>
+          <li>Implement version-controlled repository for IaC.</li>
+          <li>Automate setup of monitoring tools like Prometheus or Grafana.</li>
+        </ul>
+        <p><strong>Tech Stack:</strong> Terraform, Ansible, AWS/Azure/GCP, Prometheus, Grafana</p>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact : 9160135962</h2>
-    <p>Email: hruthingds@gmail.com</p>
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out:</p>
+    <p><strong>Phone:</strong> 9160135962</p>
+    <p><strong>Email:</strong> <a href="mailto:hruthingds@gmail.com">hruthingds@gmail.com</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Hruthin G D</p>
+    <p>&copy; 2025 Hruthin G D. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
